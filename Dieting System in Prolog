@@ -1,0 +1,8 @@
+% Facts
+diet(diabetes, "Low sugar, high fiber").
+diet(hypertension, "Low salt, balanced protein").
+diet(anemia, "Iron-rich foods").
+
+% Queries
+% ?- diet(diabetes, Diet).
+% ?- diet(hypertension, Diet).
