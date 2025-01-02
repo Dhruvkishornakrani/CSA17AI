@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My WordPress Blog</title>
+</head>
+<body>
+    <h1>Welcome to My Blog</h1>
+    <p>Explore more about <a href="https://example.com" title="Visit Example">this topic</a>.</p>
+    <h2>About Us</h2>
+    <p>This is a sample section with some content and <a href="#contact" title="Contact Section">contact details</a>.</p>
+    <h3 id="contact">Contact Us</h3>
+    <p>Email: contact@example.com</p>
+</body>
+</html>
