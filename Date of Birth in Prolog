@@ -1,0 +1,3 @@
+dob(john, date(1990, 5, 12)).
+dob(mary, date(1992, 8, 23)).
+dob(alex, date(2000, 1, 30)).
