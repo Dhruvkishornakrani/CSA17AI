@@ -1,0 +1,3 @@
+planet(mercury, small, rocky).
+planet(venus, medium, rocky).
+planet(jupiter, large, gaseous).
