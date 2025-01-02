@@ -1,0 +1,8 @@
+% Facts
+fruit_color(apple, red).
+fruit_color(banana, yellow).
+fruit_color(grape, green).
+
+% Queries
+% ?- fruit_color(apple, Color).
+% ?- fruit_color(Fruit, yellow).
