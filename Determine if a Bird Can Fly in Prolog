@@ -1,0 +1,13 @@
+% Facts
+bird(sparrow).
+bird(ostrich).
+bird(penguin).
+
+% Rules
+can_fly(Bird) :- bird(Bird), \+ cannot_fly(Bird).
+cannot_fly(ostrich).
+cannot_fly(penguin).
+
+% Queries
+% ?- can_fly(sparrow).
+% ?- can_fly(penguin).
