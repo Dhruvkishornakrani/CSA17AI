@@ -1,0 +1,11 @@
+% Facts and rules
+state(at_floor, has_banana, no).
+state(at_floor, has_banana, yes) :- grab_banana.
+
+grab_banana :- move_to_banana, climb_box.
+
+move_to_banana :- write("Monkey moves to the banana"), nl.
+climb_box :- write("Monkey climbs the box"), nl.
+
+% Query
+% ?- state(at_floor, has_banana, yes).
