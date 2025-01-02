@@ -1,0 +1,12 @@
+% Facts
+symptom(fever, flu).
+symptom(cough, flu).
+symptom(sore_throat, flu).
+symptom(headache, migraine).
+symptom(sensitivity_to_light, migraine).
+
+diagnose(Disease) :- symptom(Symptom1, Disease), symptom(Symptom2, Disease), Symptom1 \= Symptom2.
+
+% Queries
+% ?- diagnose(flu).
+% ?- diagnose(migraine).
