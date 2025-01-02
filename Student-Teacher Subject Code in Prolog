@@ -1,0 +1,4 @@
+teaches(mr_smith, math, 101).
+teaches(mrs_jones, science, 102).
+student(jane, math).
+student(john, science).
