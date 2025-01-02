@@ -1,0 +1,21 @@
+% Rule to check if a character is a vowel
+is_vowel(X) :- member(X, [a, e, i, o, u, A, E, I, O, U]).
+
+% Rule to count vowels in a list
+count_vowels([], 0). % Base case
+count_vowels([H|T], Count) :-
+    is_vowel(H),
+    count_vowels(T, RestCount),
+    Count is RestCount + 1.
+count_vowels([_|T], Count) :- % Skip non-vowel characters
+    count_vowels(T, Count).
+
+% Predicate to count vowels in a string
+vowel_count(String, Count) :-
+    string_chars(String, CharList), % Convert string to character list
+    count_vowels(CharList, Count).
+
+% Test case
+test :-
+    vowel_count("hello world", Count),
+    write('Number of vowels: '), write(Count), nl.
