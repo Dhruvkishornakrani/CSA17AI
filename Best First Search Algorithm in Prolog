@@ -1,0 +1,17 @@
+% Facts
+edge(a, b, 1).
+edge(a, c, 3).
+edge(b, d, 2).
+edge(c, d, 4).
+
+% Best-first search
+best_first(Start, Goal, Path) :- dfs(Start, Goal, [], Path).
+
+dfs(Goal, Goal, Visited, Path) :- reverse([Goal | Visited], Path).
+dfs(Node, Goal, Visited, Path) :-
+    edge(Node, Next, _),
+    \+ member(Next, Visited),
+    dfs(Next, Goal, [Node | Visited], Path).
+
+% Query
+% ?- best_first(a, d, Path).
