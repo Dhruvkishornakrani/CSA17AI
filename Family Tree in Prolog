@@ -1,0 +1,12 @@
+% Facts
+parent(john, mary).
+parent(john, peter).
+parent(mary, alice).
+
+% Rules
+sibling(X, Y) :- parent(P, X), parent(P, Y), X \= Y.
+grandparent(X, Y) :- parent(X, Z), parent(Z, Y).
+
+% Queries
+% ?- sibling(mary, peter).
+% ?- grandparent(john, alice).
