@@ -1,0 +1,11 @@
+% Rule to match a pattern
+match(pattern(X, Y), pattern(A, B)) :-
+    X = A,
+    Y = B.
+
+% Test cases
+test :-
+    match(pattern(apple, orange), pattern(apple, orange)),
+    write('Match successful!'), nl,
+    \+ match(pattern(apple, orange), pattern(banana, orange)),
+    write('Mismatch handled correctly!').
